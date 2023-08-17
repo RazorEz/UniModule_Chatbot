@@ -1,0 +1,99 @@
+<aiml version="1.0.1" encoding="UTF-8">
+    
+    <!-- Politeness-->
+    <category>
+    <pattern>HI</pattern>
+    <template>Hi, nice to meet you</template>
+    </category>
+
+    <category>
+    <pattern>WHAT IS YOUR NAME</pattern>
+    <template>My name is One Piece Bot</template>
+    </category>
+
+    <category>
+    <pattern>MY NAME IS *</pattern>
+    <template>Hi <set name="username"><star/></set>!</template>
+    </category>
+
+    <category>
+    <pattern>WHAT'S YOUR NAME</pattern>
+    <template><srai>WHAT IS YOUR NAME</srai></template>
+    </category>
+
+    <!-- Rule Category -->
+    <category>
+    <pattern>WHAT IS ONE PIECE</pattern>
+    <template>It is a manga created by Eichiiro Oda</template>
+    </category>
+
+    <category>
+    <pattern>WHO IS THE MAIN CHARACTER</pattern>
+    <template>Great question <get name= "username"/>, the main character is Monkey D. Luffy</template>
+    </category>
+
+    <category>
+    <pattern>WHAT IS HAKI</pattern>
+    <template>Haki is one of the two power systems within One Piece, it gives users the ability to either strengthen themselves, improve their sight or release a force of power</template>
+    </category>
+
+    <category>
+    <pattern>WHAT ARE DEVIL FRUITS</pattern>
+    <template>
+        Devil Fruits are fruits that give users a specific power. 
+        For example the Gomu Gomu No Mi is a fruit eaten by Luffy which gives him the properties of rubber</template>
+    </category>
+
+    <category>
+    <pattern>WHO ARE THE ANTAGONISTS</pattern>
+    <template>Contrary to belief, the antagonists are the Marines and the World Government</template>
+    </category>
+
+    <category>
+    <pattern>WHAT IS THE ONE PIECE</pattern>
+    <template>At this moment in time, nobody really knows that it is however every pirate is aiming to find it a become the Pirate King</template>
+    </category>
+
+    <category>
+    <pattern>IS LUFFY A PIRATE</pattern>
+    <template>Yes, he is in fact a pirate. He is the captain of his own crew, the Straw Hat Pirates.</template>
+    </category>
+
+    <category>
+    <pattern>WHO IS IN LUFFYS CREW</pattern>
+    <template>The Straw Hat Pirates crew members are: Zoro, Sanji, Nami, Robin, Chopper, Franky, Brook and Jinbe.</template>
+    </category>
+
+    <category>
+    <pattern>WHAT IS SO GOOD ABOUT ONE PIECE</pattern>
+    <template>The reason One Piece is so popular is due to its overarching story, it covers many topics such as racism, the will to improve, injustice and hopes</template>
+    </category>
+
+    <category>
+    <pattern>WHAT DO YOU THINK ABOUT ONE PIECE</pattern>
+    <template>I think it is an amazing work of art, as do many others</template>
+    </category>
+
+    <category>
+    <pattern>SHOULD I READ ONE PIECE</pattern>
+    <template>Yes, you will not regret it</template>
+    </category>
+
+    <!-- Responses for First Order Logic Inference  -->
+    <category>
+    <pattern>CHECK THAT *</pattern>
+    <template>CHECK</template>
+    </category>
+
+    <category>
+    <pattern>I KNOW THAT *</pattern>
+    <template>ADD</template>
+    </category>
+
+    <!-- If pattern of given statement is not known return #ERR -->
+    <category>
+    <pattern>*</pattern>
+    <template>Sorry <get name= "username"/>, I don't know the answer to this</template>
+    </category>
+
+</aiml>

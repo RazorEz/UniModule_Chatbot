@@ -1,0 +1,1 @@
+print(kb.check_knowledge("Check that brook is a crewmate of zoro"))

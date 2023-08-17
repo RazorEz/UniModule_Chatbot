@@ -1,0 +1,8 @@
+__pycache__/*
+.vscode/*
+.DS_Store
+inputs/images
+inputs/models
+neural_network/*.npy
+neural_network/*.joblib
+outputs/*
